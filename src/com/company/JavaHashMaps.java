@@ -46,5 +46,30 @@ public class JavaHashMaps {
         //returns key-value sets in cell[]
         System.out.println(users.entrySet());
 
+        //specify the key and value types / should Integer, not int, because they are Objects!
+        HashMap<Integer, String> newUsers=new HashMap<>();//creaing a new object and getting space for it
+
+        newUsers.put(5, "Natasha"); // if put the same key with a different value - it will overwrite with the new value
+        System.out.println(newUsers.toString());//has {} around in the out put
+
+
+        /*
+        HashMap of hashMaps are very popular.
+
+Pseudo code below to give an idea:
+
+Map<String, Map<String, Object>> multiHashMap = new HashMap<>();
+Map<String, Object> myHashMap1;
+Map<String, Object> myHashMap2;
+multiHashMap.put(“one”, myHashMap1);
+multiHashMap.put(“two”, myHashMap2);
+
+Also, "multimap" is a common dataStructure, where value is a collection.
+
+You use the key to retrieve the collection and the manipulate the collection.
+
+Map<Double,List<Object>> multiMap = new TreeMap<Double,List<Object>>();
+
+         */
     }
 }
