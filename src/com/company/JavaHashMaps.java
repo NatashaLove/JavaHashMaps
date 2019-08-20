@@ -47,10 +47,13 @@ public class JavaHashMaps {
         System.out.println(users.entrySet());
 
         //specify the key and value types / should Integer, not int, because they are Objects!
-        HashMap<Integer, String> newUsers=new HashMap<>();//creaing a new object and getting space for it
+        HashMap<Integer, String> newUsers=new HashMap<>();//creating a new object and getting space for it
 
         newUsers.put(5, "Natasha"); // if put the same key with a different value - it will overwrite with the new value
         System.out.println(newUsers.toString());//has {} around in the out put
+
+        newUsers.put(5, "Maria"); // the value overwrites
+        System.out.println(newUsers.toString());
 
 
         /*
